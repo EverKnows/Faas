@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/faas-application/pom.xml" />
+        <option value="$PROJECT_DIR$/faas-api/pom.xml" />
       </list>
     </option>
   </component>
