@@ -24,6 +24,7 @@
         <springboot.web.version>2.4.4</springboot.web.version>
         <springboot.test.version>2.4.4</springboot.test.version>
         <encode>UTF-8</encode>
+        <easy.rule.version>4.0.0</easy.rule.version>
     </properties>
 
 
@@ -42,6 +43,11 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${springboot.web.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.jeasy</groupId>
+                <artifactId>easy-rules-core</artifactId>
+                <version>${easy.rule.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
