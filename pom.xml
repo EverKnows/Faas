@@ -4,6 +4,9 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
 
+    <name>faas</name>
+    <description>practice</description>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -15,8 +18,7 @@
     <artifactId>faas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <name>faas</name>
-    <description>practice</description>
+
 
 
     <properties>
@@ -28,6 +30,8 @@
         <lombok.version>1.18.8</lombok.version>
         <guava.version>22.0</guava.version>
         <fast.json.version>1.2.76</fast.json.version>
+        <mybatis.version>2.0.1</mybatis.version>
+        <druid.version>1.1.17</druid.version>
     </properties>
 
 
@@ -47,6 +51,19 @@
                 <artifactId>spring-boot-starter-web</artifactId>
                 <version>${springboot.web.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
+
             <dependency>
                 <groupId>org.jeasy</groupId>
                 <artifactId>easy-rules-core</artifactId>
@@ -58,6 +75,7 @@
                 <artifactId>fastjson</artifactId>
                 <version>${fast.json.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>com.google.guava</groupId>
                 <artifactId>guava</artifactId>
@@ -111,13 +129,20 @@
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>3.2.0</version>
             </plugin>
-
-<!--            <plugin>-->
-<!--                <groupId>org.apache.maven.plugins</groupId>-->
-<!--                <artifactId>maven-surefire-plugin</artifactId>-->
-<!--                <version>3.0.0-M3</version>-->
-<!--            </plugin>-->
         </plugins>
     </build>
+
+    <distributionManagement>
+        <repository>
+            <id>nexus</id>
+            <name>releases</name>
+            <url>http://121.41.11.87:8081/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>nexus</id>
+            <name>snapshot</name>
+            <url>http://121.41.11.87:8081/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
