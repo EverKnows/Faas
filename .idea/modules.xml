@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/faas.iml" filepath="$PROJECT_DIR$/faas.iml" />
+      <module fileurl="file://$PROJECT_DIR$/faas-ao/faas-ao.iml" filepath="$PROJECT_DIR$/faas-ao/faas-ao.iml" />
       <module fileurl="file://$PROJECT_DIR$/faas-api/faas-api.iml" filepath="$PROJECT_DIR$/faas-api/faas-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/faas-application/faas-application.iml" filepath="$PROJECT_DIR$/faas-application/faas-application.iml" />
       <module fileurl="file://$PROJECT_DIR$/faas-biz/faas-biz.iml" filepath="$PROJECT_DIR$/faas-biz/faas-biz.iml" />

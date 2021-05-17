@@ -12,6 +12,6 @@
     <packaging>jar</packaging>
 
     <artifactId>faas-dal</artifactId>
-
+    <version>0.0.1-SNAPSHOT</version>
 
 </project>
