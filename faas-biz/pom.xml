@@ -13,11 +13,30 @@
 
     <packaging>jar</packaging>
 
-
     <dependencies>
         <dependency>
             <groupId>org.jeasy</groupId>
             <artifactId>easy-rules-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.jeasy</groupId>
+            <artifactId>easy-rules-mvel</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
         </dependency>
     </dependencies>
 
