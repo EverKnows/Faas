@@ -1,4 +1,4 @@
-package com.xjm;
+package com.faas;
 
 /**
  * @author jianmiao.xu
